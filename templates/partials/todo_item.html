@@ -1,0 +1,21 @@
+<li id="todo-{{ todo.id }}" class="todo-item {% if todo.completed %}completed{% endif %}">
+    <div class="todo-content" hx-patch="/todos/{{ todo.id }}" hx-target="#todo-{{ todo.id }}" hx-swap="outerHTML">
+        <div class="checkbox">
+            {% if todo.completed %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            {% endif %}
+        </div>
+        <span class="todo-title">{{ todo.title }}</span>
+    </div>
+    <button class="delete-btn" hx-delete="/todos/{{ todo.id }}" hx-target="#todo-{{ todo.id }}"
+        hx-swap="outerHTML swap:0.3s">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+        </svg>
+    </button>
+</li>
