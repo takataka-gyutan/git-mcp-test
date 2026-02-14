@@ -1,21 +1,21 @@
 # git-mcp-test
 
-GitHub MCP Server Integration Demo
+GitHub MCPサーバー 統合デモ
 
-## Overview
-This is a simple ToDo application built with:
+## 概要
+これは以下の技術で構築されたシンプルなToDoアプリケーションです：
 - **FastAPI** (Python 3.12+)
-- **SQLModel** (SQLite) 
+- **SQLModel** (SQLite)
 - **HTMX** (Hypermedia-driven frontend)
-- **Vanilla CSS** (No external CSS framework)
+- **Vanilla CSS** (外部CSSフレームワークなし)
 
-## Setup
+## セットアップ
 
 ```bash
 uv run uvicorn app:app --reload
 ```
 
-## Features
-- Add, toggle, delete todos without page reload
-- Persistent storage with SQLite
-- Modern UI using CSS variables
+## 機能
+- ページリロードなしでのToDo追加、完了切り替え、削除
+- SQLiteを使用したデータの永続化
+- CSS変数を使用したモダンなUI
