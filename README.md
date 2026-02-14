@@ -2,6 +2,8 @@
 
 GitHub MCPサーバー 統合デモ
 
+![Test](https://github.com/takataka-gyutan/git-mcp-test/actions/workflows/test.yml/badge.svg)
+
 ## 概要
 これは以下の技術で構築されたシンプルなToDoアプリケーションです：
 - **FastAPI** (Python 3.12+)
